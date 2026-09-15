@@ -24,6 +24,7 @@ O Vite usa a base `/learning-vault/`. Em desenvolvimento, abra o endereço mostr
 - `src/content/certificates/<slug>/metadata.json`: dados de cada certificado.
 - `public/certificates/<slug>/certificate.pdf` e `preview.webp`: arquivos públicos.
 - `src/data/profile.json`: texto do perfil.
+- `src/content/posts/<slug>/metadata.json`: publicações em destaque com autoria e link original.
 - `src/components/`: interface.
 - `src/utils/certificateLoader.ts`: descoberta automática por `import.meta.glob`.
 - `.github/workflows/deploy.yml`: publicação no Pages.
@@ -41,6 +42,10 @@ Os três certificados iniciais são **fictícios** e servem apenas para demonstr
 7. Envie o commit com push para `main`.
 
 Use no JSON os caminhos relativos `certificates/<slug>/certificate.pdf` e `certificates/<slug>/preview.webp`, sem barra inicial. Nenhum componente React precisa ser alterado. O filtro, as tags, as estatísticas e a ordenação se atualizam no próximo build.
+
+## Featured posts and contacts
+
+Os links de WhatsApp e LinkedIn ficam em `src/data/profile.json`. Para acrescentar uma publicação, crie outra pasta em `src/content/posts/` com um `metadata.json` seguindo o exemplo. Informe a fonte e o endereço original; a seção descobre os novos arquivos automaticamente. Os dados destacados em `metrics` são opcionais.
 
 ## Deploy
 

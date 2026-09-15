@@ -8,6 +8,7 @@ import { TagCloud } from './components/TagCloud/TagCloud';
 import { CertificateSlider } from './components/CertificateSlider/CertificateSlider';
 import { CertificateModal } from './components/CertificateModal/CertificateModal';
 import { Footer } from './components/Footer/Footer';
+import { FeaturedPosts } from './components/FeaturedPosts/FeaturedPosts';
 
 function readTag() { return new URLSearchParams(window.location.search).get('tag'); }
 
@@ -26,5 +27,5 @@ export default function App() {
     if (tag) url.searchParams.set('tag', tag); else url.searchParams.delete('tag');
     window.history.pushState({}, '', url);
   }
-  return <div id="top"><Header /><main><Profile /><section id="explore" className="explore" aria-labelledby="explore-title"><div className="explore-intro"><div><p className="eyebrow">01 / EXPLORE MEU APRENDIZADO</p><h2 id="explore-title">Cada área conta<br /><em>uma história.</em></h2></div><p>Escolha uma perspectiva para navegar pelas experiências que formam minha trajetória.</p></div><div className="stats" aria-label="Resumo do acervo"><div><strong>{String(certificates.length).padStart(2, '0')}</strong><span>certificados</span></div><div><strong>{String(tags.length).padStart(2, '0')}</strong><span>áreas de conhecimento</span></div><div><strong>{String(institutions).padStart(2, '0')}</strong><span>instituições</span></div></div><TagCloud tags={tags} activeTag={activeTag} onTagClick={selectTag} /></section><CertificateSlider certificates={filteredCertificates} activeTag={activeTag} onDetails={setDetails} /></main><Footer /><CertificateModal certificate={details} onClose={closeDetails} /></div>;
+  return <div id="top"><Header /><main><Profile /><section id="explore" className="explore" aria-labelledby="explore-title"><div className="explore-intro"><div><p className="eyebrow">01 / EXPLORE MEU APRENDIZADO</p><h2 id="explore-title">Cada aprendizado<br />é um degrau.<br /><em>Cada degrau me torna uma profissional melhor.</em></h2></div><p>Escolha uma perspectiva para navegar pelas experiências que formam minha trajetória profissional.</p></div><div className="stats" aria-label="Resumo do acervo"><div><strong>{String(certificates.length).padStart(2, '0')}</strong><span>certificados</span></div><div><strong>{String(tags.length).padStart(2, '0')}</strong><span>áreas de conhecimento</span></div><div><strong>{String(institutions).padStart(2, '0')}</strong><span>instituições</span></div></div><TagCloud tags={tags} activeTag={activeTag} onTagClick={selectTag} /></section><CertificateSlider certificates={filteredCertificates} activeTag={activeTag} onDetails={setDetails} /><FeaturedPosts /></main><Footer /><CertificateModal certificate={details} onClose={closeDetails} /></div>;
 }

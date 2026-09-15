@@ -1,0 +1,13 @@
+{
+  "id": "inventario-bti",
+  "category": "Tecnologia aplicada",
+  "title": "De dias para duas horas: a tecnologia que transformou um inventário",
+  "summary": "Uma solução da BTI Estratégica reduziu etapas manuais de contagem e consolidação de estoque. O inventário foi concluído em cerca de duas horas, com 99,5% de acuracidade — um exemplo de tecnologia resolvendo um problema real da operação.",
+  "source": "BTI Estratégica",
+  "platform": "LinkedIn",
+  "url": "https://www.linkedin.com/feed/update/urn:li:activity:7504191357784354818/",
+  "metrics": [
+    { "value": "2h", "label": "para inventariar o estoque" },
+    { "value": "99,5%", "label": "de acuracidade" }
+  ]
+}
