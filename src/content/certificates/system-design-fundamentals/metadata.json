@@ -1,0 +1,11 @@
+{
+  "id": "system-design-fundamentals",
+  "title": "System Design Fundamentals",
+  "institution": "Engineering Academy",
+  "year": 2024,
+  "date": "2024-06",
+  "summary": "Princípios de arquitetura, escalabilidade e comunicação entre sistemas de software.",
+  "tags": ["Software", "Engenharia", "Tecnologia", "Curso"],
+  "certificate": "certificates/system-design-fundamentals/certificate.pdf",
+  "preview": "certificates/system-design-fundamentals/preview.webp"
+}

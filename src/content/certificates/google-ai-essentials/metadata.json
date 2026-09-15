@@ -1,0 +1,11 @@
+{
+  "id": "google-ai-essentials",
+  "title": "Google AI Essentials",
+  "institution": "Google",
+  "year": 2026,
+  "date": "2026-08",
+  "summary": "Fundamentos, uso responsável e aplicações práticas de inteligência artificial no trabalho e na vida cotidiana.",
+  "tags": ["Inteligência Artificial", "Tecnologia", "Google", "Curso"],
+  "certificate": "certificates/google-ai-essentials/certificate.pdf",
+  "preview": "certificates/google-ai-essentials/preview.webp"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "product-analytics",
+  "title": "Product Analytics",
+  "institution": "Learning Studio",
+  "year": 2025,
+  "date": "2025-11",
+  "summary": "Métricas, experimentação e análise de dados para orientar decisões de produto.",
+  "tags": ["Produto", "Dados", "Analytics", "Tecnologia", "Curso"],
+  "certificate": "certificates/product-analytics/certificate.pdf",
+  "preview": "certificates/product-analytics/preview.webp"
+}
