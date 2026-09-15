@@ -47,6 +47,10 @@ Use no JSON os caminhos relativos `certificates/<slug>/certificate.pdf` e `certi
 
 Os links de WhatsApp e LinkedIn ficam em `src/data/profile.json`. Para acrescentar uma publicação, crie outra pasta em `src/content/posts/` com um `metadata.json` seguindo o exemplo. Informe a fonte e o endereço original; a seção descobre os novos arquivos automaticamente. Os dados destacados em `metrics` são opcionais.
 
+## News signup
+
+O pop-up de novidades envia o email informado para `cclabdis@gmail.com` usando o endpoint AJAX do [FormSubmit](https://formsubmit.co/documentation), sem backend próprio. Na primeira inscrição, o FormSubmit envia uma mensagem de ativação para essa caixa: confirme o link recebido para começar a receber as inscrições. Confira também a pasta de spam. A aplicação coleta os endereços para contato posterior; ela não dispara newsletters automaticamente. Para mudar o destinatário, edite `recipient` em `src/components/NewsSignup/NewsSignup.tsx` e ative novamente o formulário no novo endereço.
+
 ## Deploy
 
 Crie um repositório chamado `learning-vault` no GitHub e envie o projeto para a branch `main`. Em **Settings → Pages**, escolha **GitHub Actions** como fonte. O workflow executa `npm ci`, `npm run build` e publica `dist/` a cada push. O endereço padrão será `https://<usuario>.github.io/learning-vault/`. A base do Vite e os links dos arquivos públicos já consideram esse subdiretório.
